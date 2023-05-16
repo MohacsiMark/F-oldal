@@ -1,0 +1,436 @@
+@font-face {
+    font-family: Kanit;
+    src: url(https://fonts.google.com/specimen/Kanit);
+}
+body{
+    background-color: #62A87C;
+    font-family: monospace;
+    text-shadow: #494949;
+}
+
+#navbarNav{
+    margin-left: 495px;
+    display: flex;
+}
+
+.navbar-brand{
+    margin-left: 100px;
+    color: #C3F3C0;
+}
+
+.nav-link{
+    color: #C3F3C0;
+   margin-left: 5px;
+   font-weight: bold;
+   font-size: larger;
+   display: inline-block;
+   position: relative;
+}
+
+.nav-link:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #0087ca;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.nav-link:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.navbar{
+    background-color: #77D280;
+}
+
+.kep1{
+    padding: 0px;
+    border: 1px solid black;
+    margin-left: 25px;
+    margin-right: auto;
+}
+
+.kep2{
+    padding: 0px;
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-left: auto;
+
+}
+
+
+.logo{
+    margin-left: auto;
+    margin-right:auto;
+    display: flex;
+}
+
+.leiras{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.boveb{
+    text-align: center;
+    font-style: italic;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.info{
+    margin-top: 10px;
+}
+
+.dropdown-menu{
+    margin-left: 790px;
+}
+
+
+.respon{
+    border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+  height: auto;
+  display: table-cell;
+  max-height: 100px;
+}
+
+.kep1:hover{
+    transition: .5s ease;
+    opacity: 0.8;
+    position: inherit;
+    width: 938px;
+}
+
+.kep2:hover{
+    transition: .5s ease;
+    opacity: 0.8;
+    position: inherit;
+    width: 938px;
+}
+
+@media only screen and (max-width: 700px) {
+    .kep1 {
+        display: flex;
+      width: 80%;
+      margin-left: 30px;
+
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .kep2 {
+        display: flex;
+      width: 80%;
+      margin-left: 30px;
+      margin-top: 10px;
+
+    }
+  }
+
+hr{
+    border: 1px solid black;
+}
+
+  .informhr{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid teal;
+  }
+
+.inform{
+    text-align: center;
+    font-size: 125%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.informp{
+    text-align: center;
+    font-size: large;
+}
+
+.informi{
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2{
+    text-align: center;
+    margin-top: 100px;
+    font-family: Kanit;
+    font-weight: bold;
+}
+
+.dropdown-menu{
+background: rgba(255, 255, 255, 0.13);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dropdown-item:hover{
+    background-color:rgba(0, 0, 0, 0.308);
+    border-radius: 15px;
+}
+
+.image {
+	position: relative;
+	width: 100%;
+}
+
+.image__img {
+	display: block;
+	width: 100%;
+    border-radius: 25px;
+}
+
+.image__overlay {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	color: #ffffff;
+	font-family: 'Quicksand', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	opacity: 0;
+	transition: opacity 0.25s;
+    border-radius: 25px;
+    border: #C3F3C0 5px solid;
+}
+
+.image__overlay>* {
+	transform: translateY(20px);
+	transition: transform 0.25s;
+}
+
+.image__overlay:hover {
+	opacity: 1;
+}
+
+.image__overlay:hover>* {
+	transform: translateY(0);
+}
+
+.image__title {
+	font-size: 200%;
+	font-weight: bold;
+    color: #C3F3C0;
+    text-align: center;
+}
+
+.felkapott-table{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    
+    font-family: Kanit;
+    font-size: large;
+    color: black;
+    font-style: italic;
+    
+}
+
+.felkapott-table:hover{
+    color: red;
+    font-weight: bold;
+    font-size: larger;
+}
+
+
+td{
+    margin-left: 900px;
+    margin-right: auto;
+    display: flex;
+}
+
+.carousel-inner{
+    border: 0.5px solid black;
+    border-radius: 6px;
+}
+
+@media only screen and (max-width: 700px) {
+    .image__img {
+        justify-content: center;
+        width: 75%;
+        margin-top: 10px;
+        margin-left: 50px;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .logo {
+        display: flex;
+        text-align: center;
+        margin-top: 10px;
+        margin-right:auto;
+        margin-left: auto;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    .logo {
+        display: flex;
+        margin-top: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    #navbarNav {
+        
+        margin-left: 40px;
+    }
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    .dropdown-menu {
+        margin-left: 0px;
+        margin-right: 250px;
+    }
+  }
+
+
+  @media only screen and (max-width: 700px) {
+    .respon{
+        border-collapse: collapse;
+      border-spacing: 0;
+      max-width: 100%;
+      height: auto;
+      display: grid;
+      max-height: 100px;
+      margin-bottom: 240px;
+      margin-left:0px;
+    }
+  }
+  
+  @media only screen and (max-width: 700px) {
+    td {
+        text-align: left;
+        margin-left: 150px;
+        margin-right: 0px;
+    }
+  }
+
+  #drop{
+    margin-top: 8px;
+  }
+
+.oldallogo{
+    border-radius: 25px;
+    margin-right: 13px;
+}
+
+@media only screen and (max-width: 700px) {
+    navbar-brand {
+        margin-right: 130px;
+    }
+  }
+
+footer{
+    background-color: rgba(33,31,32,255);
+    margin-top: 100px;
+}
+
+.footerlogo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.footercopy{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.footernev{
+    color: #ffe978;
+    text-align: center;
+    font-size: 500%;
+}
+
+.oldalnev{
+    color: #ffe978;
+}
+
+.footerszlog1{
+    color: white;
+    font-size: 300%;
+    text-align: left;
+    margin-left: 50px;
+}
+
+.footerszlog2{
+    color: white;
+    font-size: 300%;
+    float: right;
+    margin-right: 45px;
+}
+
+.logo-footer{
+    margin-left: 16px;
+    border: gray 1px solid;
+    border-radius: 50px;
+}
+
+.logo-footer-div{
+    text-align: center;
+}
+
+.logo-p{
+    color: white;
+    font-family: Kanit;
+    font-weight: bold;
+    font-style: italic;
+    font-size: larger;
+}
+
+.logo-footer:hover{
+    width: 65px;
+    border: 3px solid white ;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .footernev{
+       margin-left: 30px;
+    }
+  }
+
+.gif{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    margin-top: 100px;
+}
+
+
+.tobbi-p{
+    text-align: center;
+    margin-top: 20px;
+    font-family: kanit;
+    font-style: italic;
+    font-weight: bold;
+    font-size: large;
+}
